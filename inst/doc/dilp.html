@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Leaf physiognomic walkthrough</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Leaf physiognomic walkthrough</h1>
+
+
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(dilp)</span></code></pre></div>
+<p>This will be a quick and dirty walkthrough of how to get results from
+a raw leaf physiognomic dataset.</p>
+<div id="background" class="section level4">
+<h4>Background</h4>
+<p>This package contains functions that enable the quick analysis of a
+quantitative leaf physiognomic dataset.</p>
+<p>We provide a function for Digital Leaf Physiognomy
+(<code>dilp()</code>), which estimates paleoclimate via multiple linear
+regressions calibrated with a modern dataset.</p>
+<p>We also provide functions for Leaf Margin Analysis
+(<code>temp_slr()</code>) and Leaf Area Analysis
+(<code>precip_slr()</code>), simple linear regressions that estimate
+mean annual temperature (MAT) and mean annual precipitation (MAP)
+respectively.</p>
+<p>Lastly, we provide a function for reconstructing fossil leaf mass per
+area (<code>lma()</code>), a functional trait that reflects leaf
+resource economy.</p>
+<p>In this vignette, we’ll walk you through the standard workflow for a
+complete leaf physiognomic dataset, using the included
+<code>McAbeeExample</code> dataset.</p>
+<p>For ease of use, a template spreadsheet for data collection can be
+found here: <a href="https://drive.google.com/file/d/1UYAd0u2fIn2QCLF6aKKzTj6KPaAPv0d1/view?usp=sharing" class="uri">DiLP Data Collection Template</a>.</p>
+<p>If you encounter any problems, or would like to request a feature,
+please create an issue <a href="https://github.com/mjbutrim/dilp/issues">on the github
+page.</a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># If the dataset is in good shape, this is all you need to do</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>dilp_results <span class="ot">&lt;-</span> <span class="fu">dilp</span>(McAbeeExample)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt; Adding missing grouping variables: `site`, `morphotype`</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="co">#&gt; Adding missing grouping variables: `site`, `morphotype`</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>lma_results <span class="ot">&lt;-</span> <span class="fu">lma</span>(McAbeeExample)</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co"># This just grabs the key data points from the results</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="fu">data.frame</span>(</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a>  <span class="at">Site =</span> <span class="fu">c</span>(<span class="st">&quot;McAbee H1&quot;</span>, <span class="st">&quot;McAbee H2&quot;</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>  <span class="at">MAT_MLR =</span> dilp_results<span class="sc">$</span>results<span class="sc">$</span>MAT.MLR,</span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a>  <span class="at">MAT_SLR =</span> dilp_results<span class="sc">$</span>results<span class="sc">$</span>MAT.SLR,</span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a>  <span class="at">MAP_MLR =</span> dilp_results<span class="sc">$</span>results<span class="sc">$</span>MAP.MLR,</span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a>  <span class="at">MAP_SLR =</span> dilp_results<span class="sc">$</span>results<span class="sc">$</span>MAP.SLR,</span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a>  <span class="at">site_mean_LMA =</span> lma_results<span class="sc">$</span>lowe_site_mean_lma<span class="sc">$</span>value</span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a>)</span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="co">#&gt;        Site  MAT_MLR  MAT_SLR  MAP_MLR  MAP_SLR site_mean_LMA</span></span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 13.54419 11.18065 106.7353 126.7697      73.68178</span></span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 11.63970  9.36000 133.6330 135.8734      67.58568</span></span></code></pre></div>
+<p>And that’s basically it! Climate estimates and associated information
+can be found in the output generated by <code>dilp()</code>, and leaf
+mass per area reconstructions can be found in the output generated by
+<code>lma()</code>.</p>
+<p>Read on for a breakdown of key DiLP and LMA components and helper
+functions.</p>
+</div>
+<div id="dilp-paleoclimate-estimates-in-depth" class="section level4">
+<h4>DiLP Paleoclimate Estimates in Depth</h4>
+<p>To go a bit more in depth, if the dataset is correctly formatted, all
+that needs to be done is to pass it through the <code>dilp()</code>
+function, which takes the following steps to produce paleoclimate
+estimates.</p>
+<p>First, the data is processed using the <code>dilp_processing()</code>
+function, which cleans up the raw dataset and generates derived
+physiognomic characters based on the raw physiognomic data.</p>
+<p>Next, possible errors and outlier measurements are identified using
+the <code>dilp_errors()</code> and <code>dilp_outliers()</code>
+functions.</p>
+<p>Finally, Mean Annual Temperature (MAT) and Mean Annual Precipitation
+(MAP) are estimated using both multiple and simple linear regressions.
+Default parameters used are from the global regressions provided by
+Peppe et al. (2011).</p>
+<p>All this information will be contained within the returned list.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># Elements of DiLP results:</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">&quot;dilp_results$&quot;</span>, <span class="fu">names</span>(dilp_results)))</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co">#&gt; [1] &quot;dilp_results$processed_leaf_data&quot;      </span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt; [2] &quot;dilp_results$processed_morphotype_data&quot;</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; [3] &quot;dilp_results$processed_site_data&quot;      </span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; [4] &quot;dilp_results$errors&quot;                   </span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co">#&gt; [5] &quot;dilp_results$outliers&quot;                 </span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="co">#&gt; [6] &quot;dilp_results$results&quot;</span></span></code></pre></div>
+<p>After generating <code>dilp()</code> results, make sure to check
+whether any common errors were discovered within the dataset.</p>
+<p>There are no errors in the <code>McAbeeExample</code> dataset, but if
+there were, this table would identify the specimens in the original
+dataset that triggered the errors.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>dilp_results<span class="sc">$</span>errors</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="co">#&gt;                                                   Check Specimen1</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co">#&gt; 1                             Entire tooth count not NA      none</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co">#&gt; 2                        Entire tooth count : IP not NA      none</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="co">#&gt; 3                         Entire perimeter ratio not NA      none</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co">#&gt; 4                                   FDR not between 0-1      none</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co">#&gt; 5 External perimeter not larger than internal perimeter      none</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt; 6                Feret is not larger than minimum Feret      none</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt; 7                    Perimeter ratio not greater than 1      none</span></span></code></pre></div>
+<p>Similarly, check if there are any outlier datapoints. These aren’t
+necessarily errors, but it may be worth double checking the original
+measurements.</p>
+<p>In the <code>McAbeeExample</code> dataset, three specimens are
+identified as outliers in tooth count:internal perimeter ratio, three
+specimens are outliers in leaf area, and four specimens are outliers in
+perimeter ratio. In this case, each of these were re-examined and found
+to be acceptable outliers.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>dilp_results<span class="sc">$</span>outliers</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co">#&gt;          Variable     Outlier1     Outlier2     Outlier3    Outlier4</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">#&gt; 1             fdr         &lt;NA&gt;         &lt;NA&gt;         &lt;NA&gt;        &lt;NA&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">#&gt; 2           tc_ip  BU-712-1117 BU-712-1169A BU-712-1176A        &lt;NA&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="co">#&gt; 3       leaf_area BU-712-2173A BU-712-2105A  BU-712-2124        &lt;NA&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">#&gt; 4 perimeter_ratio   M-2015-1-1 BU-712-1073A  BU-712-1165 M-2015-1-62</span></span></code></pre></div>
+<p>Now, let’s take a look at the results. Paleoclimate reconstructions
+will be generated for each unique site found within the dataset.</p>
+<p>The Margin, FDR, TC.IP, Ln.leaf.area, Ln.TC.IP, and Ln.PR columns
+simply report the site-level values for the parameters used in the DiLP
+regressions. The MAT.MLR and MAP.MLR columns report the temperature and
+precipitation results using those parameters. The MAT.SLR and MAP.SLR
+columns report temperature and precipitation results using simple linear
+regressions. Positive and negative error for all paleoclimate estimates
+are reported as well.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>dilp_results<span class="sc">$</span>results</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="co">#&gt;        Site   Margin       FDR    TC.IP Ln.leaf.area  Ln.TC.IP     Ln.PR</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 32.25806 0.6965086 2.562487     6.792833 0.6070757 0.2047427</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 23.33333 0.7012671 2.651242     7.037892 0.6218561 0.1504205</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt;    MAT.MLR params.MAT.MLR.error  MAT.SLR params.MAT.SLR.error  MAP.MLR</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt; 1 13.54419                    4 11.18065                  4.8 106.7353</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; 2 11.63970                    4  9.36000                  4.8 133.6330</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt;   MAP.MLR.error.plus MAP.MLR.error.minus  MAP.SLR MAP.SLR.error.plus</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; 1           87.74914            48.15775 126.7697           106.5412</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; 2          109.86219            60.29365 135.8734           114.1923</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt;   MAP.SLR.error.minus</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; 1            57.88926</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">#&gt; 2            62.04646</span></span></code></pre></div>
+<p>Finally, <code>dilp_cca()</code> can be called to make sure that your
+sites fit within the physiognomic space encompassed by the calibration
+data.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">dilp_cca</span>(dilp_results)</span></code></pre></div>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAEgCAMAAAAjXV6yAAAA81BMVEUAAAAAADoAAGYAOmYAOpAAZrYAv8QysLMzMzM6AAA6ADo6AGY6OmY6OpA6kNtNTU1NTW5NTY5NbqtNjshmAABmADpmAGZmOgBmOpBmZmZmtrZmtttmtv9uTU1uTW5uTY5ubo5ubqtuq+SOTU2OTW6OTY6Obk2OyP+QOgCQOjqQOmaQZgCQkGaQtpCQ27aQ2/+rbk2rbm6r5OSr5P+2ZgC2Zjq2Zma225C22/+2///Ijk3I///bkDrbtmbb/7bb/9vb///kq27k///4dm3+5OL/tmb/trb/yI7/25D/27b/29v/5Kv//7b//8j//9v//+T///9ZqZ7kAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAO+klEQVR4nO2dCXvbthnHadeS4max1sRpm01ZG/dyt2xOG3WZGq21TWnRZtnh9/80I8AL94uT4oH/8ySiQYjh/xfgxUEQTrIopZJD30DXFQEBioAARUCAIiBAERAgE0CjhBkBAYqAAEVAgCIgQH4Bpbns76WT8gooTaWEeovOJ6A0lRJSoOu4PAJKUykhBbquyx+gNJUSUqDrvMIASqVnLG7xsIqAAAUCtCEVARWKgHSbeYYPScjlVg8jj4AIEBsJoc3G6WYPIX+AqKokJoQP3e63dfkCxIQaIaHq2PWeW5UnQCwfnhAl59tuT34A8XzUgHqEyAcgri3XAEQg6nbr5gEQGYYNAFWIOt7+2wOqbG2EgDT4FIi63kOyBlTaqr3a8Nn0oA9pC4gj4cqnq4QsAQlY2PAZJCBpNDbHM0hALJ+UdWvCZ4CAOD5sCTLiM7wgzfNJaauGfBpCwRw6ygwQyMeaUDCDrnIFxFcVeuSuSai7gzNHQDwf65IUzKKb3AAx9cSJUDCLbrIO0nw1GSYh22aeMScCNAxClh1FDTxjBZRp8+EfjvWRkM1glbEl45PymXpIyB2QAZ8+zlQ7AzLi00NCwQDJ8vSNUChA9bkISF586mMDQJ0jBAL6+OYHNi82kvhWRwmBgG7mQkD+F5V3lBBk9O7r70WAkgCr7pM+Avr4089FFXuUq8wbpgB1tQgBTm8u+BiEom5QQJ0ipHZ69+o2AlLpZo50QecND6hLhCya+RrQ7vR4lX/sz0+uiS+skzN07tMr6SX35wv0sS2+/bzKSADqECE7QJsS0NEV/iABPVy+QMa1AS2PxIBQp9LUTAhZ9KQJQC9QYVm/IAFtj9+dLrQB7c8TIaDuPAxyA/SnL6+zhx9f54AeLpNkghKXJ79fThCg10mCwKETqKhUnxkFaDtpSCYcny4QspmTbgD9+a+rbPfk3yfXDzkU7Ht/fpatc+eo3qFE9CdbF8foE32PqmJCQM3QzadXK1k91agBLdaLbHu2PbmubW4xnAX+g8xjCjmR6hPlyesVlhQQObj16NVKds/FakDbSbZc5IC2Ze3JlpMMl5rd4wLIumBxVn2iPGAJ6i2g5rYrQPsvf/t8RQAqC8fxqgZUBvA1EcjHBCj75fUkI6rYujB9usAJqIqVjdT2qGnVRgUIdQu3dTzGoRjXsSZI50Unp1N9otPDDdICQMjftm7mcWjOtT76O2rmES10AnGpPjMdQH1t5hlAvm+l/x3FFgFtOsLHtpkPMeVKA+rKiNWyo+h/zpXn00tAxNKFUE81eg6IW7og6LrU9ZA6MZvNqBOwwjg2VDhAzJnZrCY0HkCFW/w3hYamUCSNERAHReF/NmsIjQWQIOxI7acEIF0+fQck4SP0X/FBhLT59ByQjI+IQEoA0uczWECCTQVmjSIgnlAEBAGazawIhXFsKP9BOgKCCTFGZzM7QmEcG8pXR1EVpG3ftgvj2FDOQw0dPpbva4ZxbCi3waoOnyLNgs8AAOnysXj/cKiAOJN20Wc8gNSRacCAmsCiBATF7sECqizrF6BxAWo8a0agcIDqZSW5/vsvI+smpk3y8psIyBG0Cki16s9etm89U4Tk3RwXPr0EBAUdKSELPiAgtAL0NV7RhpZmob/PymMHIALTBnlZPtSzHRUhGz4QILQccn9+vMKLRdbHK1SCqmMXJKxpg7wcn8q4ioI1HwgQrl05jP+htWs5HQSoOrYHwpk2yavmA3MwZAXcDl7Vh5f6bRO09qjgUhw7EGFNm+QF+EDuTWsbcDsVoP15DqQsQdWxCxLGtEleiI/avTqP4AxwO7iK5X+hBW5odV+12I1aD+ksB0CscQCQOpPoDHA7+/MJDtKIB3ptBAXo6tgFCWPaJK/Yox4gceljz5oAqpv5ZR51/pHTWSaT+tibbFeYuQKSXcIEUCsiAC3LlwO2sm5EIt4cRytIU3DYR/QScK0AgNQAWqKFzMlCDUiwOc5Gp5mn+bCLGGQlqx0EatWAisXLKPApATXTHbx/TT71WrM+AkKL5OESxFsx5MMUoV4AwlUsw00DGIPAGqUCJFooJLlmKwQAkUG66D48XMoB0UWBLgKKYiQANEuFYZr+XhsAIAHN/P0386e3dd6UFVBFRIAkK6mEXw5tXkciQP+sSxB65fnmWZ1XAkhSrETFJ93IHtGLvtoKAUAcICoG3X/3Prv76n2VVwxIUqyETz6IhQyiotZ9QOjNSaKffvfqNrv/9m1Wbm4iBMQlCssVx0eHUKskJCIB4fcpJ+TZD08rQDivVgGSJvcd0BpPNC0pQE0Jwnm1S0oqTqVXUsGE2gQhE9tRpAExMUjYDRKjGB4gPFe5YAB9fHNBtmL1YJXgY0KIWWoGEtL0gC7th4ZAZAxCr5XSMYjpB2XiwapJGfI5KV2quKwHFkIxrdiWbsUEedskpOWguqwDBJW4flBejKDBqmoVWeuAmusqMu0e450Oluz/fZmukqgn/R+NwWptwveLh4bbLJHk5blKCiJA0D9AAMLtGN4AQJqXLwdB313VyC4HVGxNhB5FL+oS9AL/8Icvjlc4HY0a3j1elaOH3ZO/CeJL4293WjzSXkof3NL9oDB8ssxsszcpoIfLRbY9+e35VUkHAzq5RkenC7wxGJGOd49AALZc8SDmgybsAXfnfCwJ+/68RmYpoKb27D9fETFouajO1On5ASKG0vk6x3YUM9WcNB9tDw5IGqR3T4qysCz3okHWf7lqABHpKOHhx6ECkjXzhVXkiqhKC1TzdjjqEOl6JejhslpVs5aFaXZGsRuAJB1FFIN2j1EIRo/tS0CTKlzv6PQiBqkB1atqGlLcnXNz0t72U0QTCVXBNd6RU8SnasXyIfgnXyyaVuzoqoBQpD9ckq0YAKick2ZssnlpPhUg1/0U0dOm6qlBx7YsJesIXr6mePBfDzVqPhUg1/0U8XqMKmt3AWnmJfhUgJz3U8SXGQqgrOFTAfKwn2IPqpjGUKMUuvmUBORhP8VsXVXurgLSGGpUBzWfGpD7forrehjUVUAaQ43qoJnZqAA576fYbArcVUA6PenqgAfkup8iubR5CIBSDpDbfopUZ8AC0FQ7p7HMhhqlBIDc9lMsI1PxJXNA02k4QoZDjUIMIN+31FFAekONQt0CNJ0GJGQ81MBqgvShZxSRWgOkn3cTkJDxb4+YTkMSsgVEEDroU42aDwsobwyEsVTjSY/EtEnejfAhGLfUjPmRlCSZltZdTcWEFBRaASTkYwBI69UfnZuaToWE8HRZuRhsmxAfbZUgIR92uaoKkM7LYzo3JQGUNVOpaMp5PcnKj3YAZTwgUdVRAtIRfE/TqYRQMxlf/nKc8uNQgKiCYfyqXRhA5eMc1H3BM5an5Yx0K4AE3onAw+Kx5AMDmk5lhJoShH4qn5gWzy7aAcS1QxwJdz4uw/kmBiE4zUd7gDYiPuKFZ7Z8XAGVrVj5nteyxVaM3AKGxSFLaBmQL7kAIsTFa40GTAOed7vmsgSk+pXqmoB0ipdvtxY6GCCtEOXbrYUOBSiFMgwMkGGQThmNAJC8mdfgIyXk262FvAGSdRS1+MgI+XZrIX+A+GbbgM/wAEl+vYaGhHwGCkgVXyMg2923DPj0HBBgzgSQLK9nszayBwTb0yYkzerZrI2sAWkZrIEoCcm/6tmsjcIDEmQpk2C2ns3aKDggYR7diunZrI1CA7KOVL0BhHanEOU15WNFKIRjQ4GAbuZCQMYFaKiA7r7+PgJS6ONPPxdVDO/dQZzQc54OHtDNhSQGaTl35dNtQL/O58/uXt3CQTocn24DQrqZI10I85pVMCs+3QeUyZt52R4DEVCtTQSkzgvOBznz6TkgyDxdgKwwebVqJ3tAkuLRJFCA7AqSX69W8j1YJRJSgUYPiEwRATIk5NmsjfwCopPcCXk2ayOvgNi0UQMSBWkORHk4TkCCZp4vKsXBSAHxYw1pZbLk0wVCLoCABzqiE4Z8eg5IugZGAMOOz4gA2Q01hgfIz/LoIQPSjzZamTw6tZR3QLrRRi+bR6eW8g9Ir2hoFjSPTi0VAJCOdEOVR6eWcgJkTUi7a+3PqK0iIEAREKCggKT+IyACA0BIfQl/Rm0VEJASwTiaeSUgoJCMoqOoIgSGmTEMNZwAacmbT2tFQIAiIEDBAA3lxflwgKznoUcDyHYeelCAYEJOfIYOyF2+bNorAgIUAQGKgABFQIAiIECugAIT8uTSQY6A3Hs6wwbkoa88aEA+RltDBuRlvD5gQH5mfFRCV/bq1kLtAqKzQl8sLu3VrrlaBUTnhb5ZXdurX2N5AoR+1uTDvusC5T4wIT9Bmk4HHfM/qXIflpCXZl76DZljs40o+wtI/zeZDxbQ3cv5Z+8VeQ1un3YM+u8HoPtv32Y3T2+18kIyBKT3e9LDS2367tVtdv/de628oGjHsP9O8NEuQezeHTaiHcP+u8AHKhX338zrGuZagljHsP8O8IH27vjL2+zDZ56qWMY67oJ/UGrTH/Lig6qZTt6BCgjSnktQDwWY/jCf/7EqQBGQz7yDUQQEyAhQkjyCfr8cmMEmRzD3OqbNsj9yzuAlR4uKgABFQIBGGXhNFAEBioAARUCAIiBAZoDuXs6b3ZN5UbNHNhfAInZu7ICMAKGZDzTAlwg5u3nmcIFCNyDCNmUE6ANy/6v09tHs9d1X72Wn4QtgkTtYd0DGMaiZP+OEp/jlp+ELINU7WHdEpoA+vrmQnqPnHy0ugETtYN0BaQNCU9QoDCvs6ZQg5QWKa/QUENbdS9W9wzEIuEDG7mDdARkBAuyh2qNuxUA+xWV6W4KK/1757YP9IOgCWD0GNEZFQIAiIEAREKAICFAEBCgQoHWSJEdX/OFZcXr//CrMv+tfQQA9XJ5cIxwL6jA/fnG8whmWR+MGtERQciz5B3GYbY/fnSJQ+/Nk3ID25wvBIeL2++Uk/9xOdp+OGhBhnySxPz/L1kUdGzugxyvBYV7DVtkO17HRAxKXoOUExekJm9xxhYxBeWNOHeKlLLiOjRxQ0WZlOOA0h0X4KerY2AGJ+kFl5So+xg4ojzdN97k8LMNztkbJEdBwFAEBioAARUCAIiBAERCgCAhQBAQoAgIUAQH6P8oZIw2C4I3HAAAAAElFTkSuQmCC" /><!-- --></p>
+<p>If a site you are testing falls outside the bounds of the calibration
+data, the DiLP regressions may not be able to accurately reconstruct the
+paleoclimate of that site.</p>
+<p>In this case, both McAbee localities do fall within the bounds of the
+calibration data; thus, the use of DiLP is appropriate here.</p>
+</div>
+<div id="leaf-mass-per-area-reconstructions-in-depth" class="section level4">
+<h4>Leaf Mass per Area Reconstructions in Depth</h4>
+<p>Leaf mass per area reconstructions can be generated from a smaller
+subset of leaf physiognomic data than is needed for DiLP paleoclimate
+estimates. All you really need is leaf area and petiole width.</p>
+<p>The standard suite of DiLP traits already includes leaf area and
+petiole width, so here we will just continue using the included
+<code>McAbeeExample</code> dataset.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>lma_results <span class="ot">&lt;-</span> <span class="fu">lma</span>(McAbeeExample)</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">&quot;lma_results$&quot;</span>, <span class="fu">names</span>(lma_results)))</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co">#&gt; [1] &quot;lma_results$species_mean_lma&quot;       &quot;lma_results$royer_site_mean_lma&quot;   </span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="co">#&gt; [3] &quot;lma_results$lowe_site_mean_lma&quot;     &quot;lma_results$lowe_site_variance_lma&quot;</span></span></code></pre></div>
+<p>As with <code>dilp()</code>, results for <code>lma()</code> are saved
+within a list. lma_results$species_mean_lma includes the reconstructed
+mean LMA for every species-site pair in the dataset. Upper and lower
+prediction intervals are calculated as well.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>lma_results<span class="sc">$</span>species_mean_lma</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="co">#&gt;         site morphotype  n petiole_metric    lower     value     upper</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co">#&gt; 1  McAbee H1         M1 10   0.0018166221 81.37167 105.44818 136.64852</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co">#&gt; 2  McAbee H1         M5  3   0.0011067149 54.54670  87.26130 139.59661</span></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="co">#&gt; 3  McAbee H1         M8  8   0.0011510539 66.35987  88.58058 118.24193</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="co">#&gt; 4  McAbee H1        M12  1   0.0010808383 38.37080  86.47620 194.89128</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a><span class="co">#&gt; 5  McAbee H1        M13  1   0.0006070381 30.77894  69.37268 156.35916</span></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="co">#&gt; 6  McAbee H1        M18  1   0.0011637972 39.46986  88.95393 200.47708</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a><span class="co">#&gt; 7  McAbee H1        M19  1   0.0008073257 34.32356  77.35576 174.33838</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="co">#&gt; 8  McAbee H1        M24  5   0.0002309535 33.24559  47.95859  69.18289</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="co">#&gt; 9  McAbee H1        M28  1   0.0002175761 20.78085  46.87783 105.74787</span></span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a><span class="co">#&gt; 10 McAbee H1        M41  1   0.0002994371 23.48554  52.96009 119.42543</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a><span class="co">#&gt; 11 McAbee H1        M44  1   0.0005108600 28.81385  64.94883 146.40011</span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a><span class="co">#&gt; 12 McAbee H1        M73  1   0.0003778943 25.67425  57.88359 130.50081</span></span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a><span class="co">#&gt; 13 McAbee H1        M79  2   0.0003960090 33.14315  58.92822 104.77386</span></span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a><span class="co">#&gt; 14 McAbee H1        M91  1   0.0001524066 18.12949  40.91735  92.34838</span></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a><span class="co">#&gt; 15 McAbee H2         M1  3   0.0008877491 50.14134  80.21339 128.32102</span></span>
+<span id="cb9-18"><a href="#cb9-18" tabindex="-1"></a><span class="co">#&gt; 16 McAbee H2         M8  2   0.0010796906 48.64042  86.44111 153.61845</span></span>
+<span id="cb9-19"><a href="#cb9-19" tabindex="-1"></a><span class="co">#&gt; 17 McAbee H2        M18  1   0.0002132426 20.62123  46.51895 104.94097</span></span>
+<span id="cb9-20"><a href="#cb9-20" tabindex="-1"></a><span class="co">#&gt; 18 McAbee H2        M19  4   0.0006803596 48.21879  72.46130 108.89200</span></span>
+<span id="cb9-21"><a href="#cb9-21" tabindex="-1"></a><span class="co">#&gt; 19 McAbee H2        M22  3   0.0008971039 50.34260  80.53524 128.83571</span></span>
+<span id="cb9-22"><a href="#cb9-22" tabindex="-1"></a><span class="co">#&gt; 20 McAbee H2        M24  2   0.0007082087 41.40139  73.58031 130.77005</span></span>
+<span id="cb9-23"><a href="#cb9-23" tabindex="-1"></a><span class="co">#&gt; 21 McAbee H2        M28  1   0.0004553366 27.57296  62.15600 140.11437</span></span>
+<span id="cb9-24"><a href="#cb9-24" tabindex="-1"></a><span class="co">#&gt; 22 McAbee H2        M29  1   0.0001254609 16.82558  37.98658  85.76111</span></span>
+<span id="cb9-25"><a href="#cb9-25" tabindex="-1"></a><span class="co">#&gt; 23 McAbee H2        M31  2   0.0003283234 30.84620  54.85640  97.55577</span></span>
+<span id="cb9-26"><a href="#cb9-26" tabindex="-1"></a><span class="co">#&gt; 24 McAbee H2        M47  2   0.0009868057 46.99765  83.52115 148.42836</span></span>
+<span id="cb9-27"><a href="#cb9-27" tabindex="-1"></a><span class="co">#&gt; 25 McAbee H2        M76  1   0.0001534697 18.17789  41.02614  92.59292</span></span>
+<span id="cb9-28"><a href="#cb9-28" tabindex="-1"></a><span class="co">#&gt; 26 McAbee H2        M94  1   0.0001232820 16.71284  37.73320  85.19165</span></span>
+<span id="cb9-29"><a href="#cb9-29" tabindex="-1"></a><span class="co">#&gt; 27 McAbee H2        M97  1   0.0005314955 29.25363  65.93877 148.62843</span></span></code></pre></div>
+<p>Three different metrics of site level LMA are calculated.</p>
+<p>royer_site_mean_lma and lowe_site_mean_lma use slightly different
+regressions to show the average LMA of all species at a site.</p>
+<p>lowe_site_variance_lma shows the variance of species-mean LMA values
+at a site.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co"># Royer Site Mean LMA</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>lma_results<span class="sc">$</span>royer_site_mean_lma</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="co">#&gt;        site  n    lower    value    upper</span></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 14 64.42873 72.90997 82.50765</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 13 57.33929 65.48619 74.79063</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co"># Lowe Site Mean LMA</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>lma_results<span class="sc">$</span>lowe_site_mean_lma</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="co">#&gt;        site  n    lower    value    upper</span></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 14 61.03750 73.68178 88.94539</span></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 13 53.87969 67.58568 84.77822</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co"># Lowe Site Variance LMA</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>lma_results<span class="sc">$</span>lowe_site_variance_lma</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="co">#&gt;        site  n    lower     value    upper</span></span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 14 491.2574 1070.6851 2333.535</span></span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 13 323.3496  866.6651 2322.899</span></span></code></pre></div>
+</div>
+<div id="paleoclimate-estimates-with-simple-linear-regressions" class="section level4">
+<h4>Paleoclimate Estimates with Simple linear regressions</h4>
+<p>Sometimes, you may not have a full leaf physiognomic dataset recorded
+for a site. In that case, simple linear regressions can be used to
+estimate MAT (<code>temp_slr()</code>) and
+MAP(<code>precip_slr()</code>) so long as you have margin state or leaf
+area data, respectively.</p>
+<p>See the documentation for either function to learn about the
+different regressions that are preloaded into the functions. In this
+case, we’ll use the Peppe2018 regression for MAT and the Wilf1998
+regression for MAP.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">temp_slr</span>(McAbeeExample, <span class="at">regression =</span> <span class="st">&quot;Peppe2018&quot;</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="co">#&gt;        site  n    lower      MAT    upper</span></span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 31 7.142065 12.14206 17.14206</span></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 30 5.410667 10.41067 15.41067</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">precip_slr</span>(McAbeeExample, <span class="at">regression =</span> <span class="st">&quot;Wilf1998&quot;</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="co">#&gt;        site  n    lower       MAP    upper</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 17 27.07551  89.55803 217.9242</span></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 13 30.95183 102.37976 249.1237</span></span></code></pre></div>
+<p>You can also use your own regressions for both of these functions as
+long as you provide the slope, the constant, and the standard error
+.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">temp_slr</span>(McAbeeExample, <span class="at">slope =</span> <span class="fl">0.290</span>, <span class="at">constant =</span> <span class="fl">1.320</span>, <span class="at">error =</span> <span class="dv">5</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="co">#&gt;        site  n    lower       MAT    upper</span></span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a><span class="co">#&gt; 1 McAbee H1 31 5.674839 10.674839 15.67484</span></span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a><span class="co">#&gt; 2 McAbee H2 30 3.086667  8.086667 13.08667</span></span></code></pre></div>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
